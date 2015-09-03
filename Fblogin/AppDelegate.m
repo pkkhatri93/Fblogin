@@ -32,6 +32,9 @@
                                                           openURL:url
                                                 sourceApplication:sourceApplication
                                                        annotation:annotation];
+//tesing the new fun
+    NSLog(@"worki9ng");
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
