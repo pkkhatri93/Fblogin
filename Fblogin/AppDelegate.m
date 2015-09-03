@@ -37,6 +37,9 @@
 <<<<<<< HEAD
 =======
      NSLog(@"work from myside");
+<<<<<<< HEAD
+>>>>>>> parent of d6278ce... aaaa
+=======
 >>>>>>> parent of d6278ce... aaaa
     
 
