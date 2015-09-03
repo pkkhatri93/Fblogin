@@ -34,11 +34,7 @@
                                                        annotation:annotation];
 //tesing the new fun
     NSLog(@"worki9ng");
-     NSLog(@"work from myside");
-    NSLog(@"work from myside");
-    NSLog(@"work from myside");
-    NSLog(@"work from myside");  
-
+   
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
