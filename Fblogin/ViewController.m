@@ -28,29 +28,14 @@
     self.loginButton.readPermissions = @[@"public_profile", @"email", @"user_friends"];
     self.loginButton.delegate=self;
     
-    for (id obj in _loginButton.subviews)
-    {
-        if ([obj isKindOfClass:[UIButton class]])
-        {
-            UIButton * loginButton =  obj;
-            UIImage *loginImage = [UIImage imageNamed:@"new.png"];
-            [loginButton setBackgroundImage:loginImage forState:UIControlStateNormal];
-            [loginButton setBackgroundImage:nil forState:UIControlStateSelected];
-            [loginButton setBackgroundImage:nil forState:UIControlStateHighlighted];
-            [loginButton sizeToFit];
-        }
-    }
-    
-    //[self.loginButton setImage:[UIImage imageNamed:@"new.png"] forState:UIControlStateNormal];
-//    [self.loginButton setBackgroundImage:[UIImage imageNamed:@"new.png"] forState:UIControlStateNormal];
-//    [self.loginButton setTitle:@"" forState:UIControlStateNormal];
-//    [self.loginButton setBackgroundColor:[UIColor redColor]];
     // chekcing that user is already login or not
     if ([FBSDKAccessToken currentAccessToken]) {
        
         // if user is logged in then getting all the user info
         [self getAndUserInfo];
     }
+    
+
 
 }
 - (void)loginButton:(FBSDKLoginButton *)loginButton didCompleteWithResult:(id )result error:(NSError *)error{
@@ -58,7 +43,9 @@
         NSLog(@"You've Logged in");
         NSLog(@"%@", result);
         
+        
         [self getAndUserInfo];
+        
         
     }
 }
@@ -95,27 +82,10 @@
              NSLog(@"%@", [error localizedDescription]);
          }
      }];
-
-    FBSDKGraphRequest *request = [[FBSDKGraphRequest alloc]
-                                  initWithGraphPath:@"/{hashtag-id}"
-                                  parameters:@{@"fields": @"id, name"}
-                                  HTTPMethod:@"GET"];
-    [request startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection,
-                                          id result,
-                                          NSError *error) {
-        // Handle the result
-    }];
+    
 
 }
 -(void)loginButtonDidLogOut:(FBSDKLoginButton *)loginButton{
-    
-    self.uImageView.image=nil;
-    self.uUsername.text=@"usename";
-    self.uEmailId.text=@"Email Id";
-    self.uId.text=@"UserID";
-    
-
-    
     
 }
 

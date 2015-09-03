@@ -16,7 +16,6 @@
 		43D0B9051B7AF8B9008A5A3A /* FbloginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D0B9041B7AF8B9008A5A3A /* FbloginTests.m */; };
 		43D0B9101B7AFA8F008A5A3A /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D0B90E1B7AFA8F008A5A3A /* FBSDKCoreKit.framework */; };
 		43D0B9111B7AFA8F008A5A3A /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D0B90F1B7AFA8F008A5A3A /* FBSDKLoginKit.framework */; };
-		43D0B9131B7B2CF9008A5A3A /* new.png in Resources */ = {isa = PBXBuildFile; fileRef = 43D0B9121B7B2CF9008A5A3A /* new.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +44,6 @@
 		43D0B9041B7AF8B9008A5A3A /* FbloginTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FbloginTests.m; sourceTree = "<group>"; };
 		43D0B90E1B7AFA8F008A5A3A /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		43D0B90F1B7AFA8F008A5A3A /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
-		43D0B9121B7B2CF9008A5A3A /* new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +72,6 @@
 				43D0B8E71B7AF8B9008A5A3A /* Fblogin */,
 				43D0B9011B7AF8B9008A5A3A /* FbloginTests */,
 				43D0B8E61B7AF8B9008A5A3A /* Products */,
-				43D0B9121B7B2CF9008A5A3A /* new.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -210,7 +207,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43D0B9131B7B2CF9008A5A3A /* new.png in Resources */,
 				43D0B8F41B7AF8B9008A5A3A /* Main.storyboard in Resources */,
 				43D0B8F91B7AF8B9008A5A3A /* LaunchScreen.xib in Resources */,
 				43D0B8F61B7AF8B9008A5A3A /* Images.xcassets in Resources */,
@@ -366,10 +362,8 @@
 					"$(PROJECT_DIR)/Fblogin",
 				);
 				INFOPLIST_FILE = Fblogin/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -382,10 +376,8 @@
 					"$(PROJECT_DIR)/Fblogin",
 				);
 				INFOPLIST_FILE = Fblogin/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -442,7 +434,6 @@
 				43D0B90A1B7AF8B9008A5A3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		43D0B90B1B7AF8B9008A5A3A /* Build configuration list for PBXNativeTarget "FbloginTests" */ = {
 			isa = XCConfigurationList;
@@ -451,7 +442,6 @@
 				43D0B90D1B7AF8B9008A5A3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
